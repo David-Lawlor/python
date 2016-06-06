@@ -1,4 +1,4 @@
-number = 42;  ## All variables in python are objects
+number = 42;  ## All DataTypes in python are objects
 
 # print out the value of the variable
 print("This is the value of the variable  " + str(number));
@@ -25,14 +25,22 @@ print(type(c), c)
 d = round(45.8)
 print(type(d), d)
 
+# this is a boolean Note: Capital t for true and copital f for false
+# As opposed to lower case in Java
+boolean = True
+print(type(boolean), boolean)
+
+# This is a simple string declaration
 e = "This is a string"
 print(e)
 
+# This is a multi-line string declaration
 f = '''This is a multi-line
 quote. Triple single quotes allow
 a string to span multiple lines'''
 print(f)
 
+# a string with an embedded new line character
 g = "This is a single line quote \nwith a new line character"
 print(g)
 
@@ -71,3 +79,16 @@ print(list[:3])
 # Working in the same way at omitting the first index. This can be done be ommitting the second index
 # which will print out to the last index
 print(list[3:])
+
+# A dictionary is a hashed table. it is a a key value data structure. Defined between curly braces
+# with comma separated element pairs {key, value}
+dictionary = {"one":1, "two":2}
+print(type(dictionary), dictionary)
+
+# Another method for declaring a dictionary
+# The quotes around the key values are implicit
+dictionary1 = dict(
+    one = 1,
+    two = 2
+)
+print(type(dictionary1), dictionary1)
